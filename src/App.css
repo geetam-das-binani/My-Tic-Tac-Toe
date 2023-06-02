@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100vw;
+}
+.turn{
+	margin-bottom: 1rem;
+	font-size: 25px;
+	color: red;
+	font-weight: bolder;
+}
+.board {
+	height: 500px;
+	width: 500px;
+	background: aquamarine;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.board > .row {
+	flex: 0.34;
+	display: flex;
+}
+.row > .square {
+	flex: 0.34;
+	display: grid;
+	place-items: center;
+	border: 1px solid black;
+  height: 100%;
+  font-size: 10vw;
+}
+.square:active{
+	background: blueviolet;
+}
